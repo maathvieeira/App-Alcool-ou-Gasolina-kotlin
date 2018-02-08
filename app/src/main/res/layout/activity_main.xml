@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    tools:context="br.com.matheusvieira.appalcoolougasolina.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Álcool ou Gasolina"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#000"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Saiba a melhor opção para o abastecimento do seu carro"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/edtAlcool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Preço Álcool ex: 1.90"/>
+
+    <EditText
+        android:id="@+id/edtGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Preço Gasolina ex: 2.90"/>
+
+    <Button
+        android:onClick="btnVerificar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhuma opção escolhida"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
